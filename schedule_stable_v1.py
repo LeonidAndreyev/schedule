@@ -117,10 +117,10 @@ try:
         schedule_b.loc["Kalan Süre", schedule_b.columns[(con_ * col) + 1]] = schedule_a.iloc[0, col]
         if optiond_1 == True:
             if con_ == 2:
-                schedule_b[schedule_b.columns[(con_ * col)]] = schedule_b[schedule_b.columns[(con_ * col)]] + ", Süre:" + schedule_b[schedule_b.columns[(con_*col) + 1]].astype(str) + " dk."
+                schedule_b[schedule_b.columns[(con_ * col)]] = schedule_b[schedule_b.columns[(con_ * col)]] + #", Süre:" + schedule_b[schedule_b.columns[(con_*col) + 1]].astype(str) + " dk."
                 schedule_c.loc[:, schedule_c.columns[col]] = schedule_b.loc[:, schedule_b.columns[(con_ * col)]]
             elif con_ == 3:
-                schedule_b[schedule_b.columns[(con_ * col)]] = schedule_b[schedule_b.columns[(con_ * col)]] + ", Süre:" + schedule_b[schedule_b.columns[(con_*col) + 1]].astype(str) + " dk, Sınıf:" + schedule_b[schedule_b.columns[con_*col + 2]].astype(str) + "."
+                schedule_b[schedule_b.columns[(con_ * col)]] = schedule_b[schedule_b.columns[(con_ * col)]] + #", Süre:" + schedule_b[schedule_b.columns[(con_*col) + 1]].astype(str) + " dk, Sınıf:" + schedule_b[schedule_b.columns[con_*col + 2]].astype(str) + "."
                 schedule_c.loc[:, schedule_c.columns[col]] = schedule_b.loc[:, schedule_b.columns[(con_ * col)]]
             schedule_c.loc["Kalan Süre", schedule_c.columns[col]] = schedule_a.iloc[0, col]
         elif optiond_1 == False:
