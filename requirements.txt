@@ -1,5 +1,4 @@
+numpy==1.21.0
 pandas==1.2.5
 openpyxl==3.0.7
 streamlit==0.84.2
-sqlite==3.36.0
-numpy==1.21.0
