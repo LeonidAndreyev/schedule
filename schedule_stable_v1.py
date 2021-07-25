@@ -131,7 +131,7 @@ try:
     if process == "completed":
         st.markdown("""### **Sınav Programı:**""")
         st.markdown("""*Girdiğniz tarih aralığı ve süreye göre dersler aşağıdaki gibi dağıtılmıştır.*""")
-        st.table(schedule_c)
+        #st.table(schedule_c)
         # download_button = st.button("Tabloyu İndirmek İçin Tıklayınız [YAKINDA]")
         st.markdown("""### **Dağıtılamayan Dersler:**""")
         if non_distributed.empty == True:
